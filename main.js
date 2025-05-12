@@ -129,3 +129,110 @@ else{
 
 
 // Error Handling in Javascript
+try{
+    const result = 0/10;
+    console.log(result)
+
+}
+catch(error){
+    console.log(error)
+}
+
+
+
+// Working with APIs in Javascript
+url = 'https://catfact.ninja/fact'
+async function getCatQuote(endpoint) {
+    try{
+        let response = await fetch(endpoint);
+        let data = await response.json();
+        if (data){
+            let quotes = document.querySelector('.catqoute')
+            quotes.textContent = data.fact;
+        }
+
+        else{
+            let quotes = document.querySelector('.catqoute')
+            quotes.textContent = 'Error feteching qoute try again';
+        }
+        console.log(data);
+     
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+getCatQuote(endpoint=url);
+
+
+// Dom manipulation
+let dom = document.querySelector('.dom');
+dom.addEventListener('click',function(){
+    // You can style elements here
+    // dom.style.color = 'red';
+    // dom.style.fontSize = '50px';
+    // dom.style.marginLeft = '50%';
+    
+    // You can call a custom style name from a css file
+    // dom.classList.add('domsonclicked')
+
+    // You can set a text content directly here
+    dom.textContent = 'Dominology'
+
+    // You can render html directly
+    // dom.innerHTML= '<h4 class="special">Doming </h4>'
+
+    // Adding a new content to the page
+    dom.insertAdjacentHTML('beforeend','<h4 class="special"> New Doming </h4>')
+});
+
+
+
+// Scoping and hoisting in Javascript
+/*
+-variables defined in a function cannot be accessed and used
+-variable defined in condition statements using let and const
+cannot also be accessed outside the condition
+-variables declared using var cannot be accessed in a function but
+can be accessed in conditionals.
+
+// Scoping
+*/
+// function Age(){
+//     let age = 55;
+// }
+
+// if(100>40){
+//     const myAge = 500;
+// }
+// if(100>40){
+//    var myAge = 500;
+// }
+// // console.log(age)
+// console.log(myAge)
+
+
+// Hoisting
+/*
+function declarations can be called at any where
+that is to say you can define a function at the bottom and 
+call it or use it at the top because function declarations are 
+hoisted.
+
+That is not the same for arrow functions though.
+*/
+myName('Felix');
+function myName(name){
+    console.log(name);
+}
+
+// String concatenation (+) vs template literals()
+// using string concatenation
+amount = 2000;
+// const balanceMessage = 'Your balance is: ' + amount;
+
+
+// Using template literals
+const expenditure = 600;
+const balanceMessage = `Your balance is: ${amount - expenditure}`;
+console.log(balanceMessage);
