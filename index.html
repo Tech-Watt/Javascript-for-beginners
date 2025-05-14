@@ -2,72 +2,188 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
-  <script src="script.js" defer></script>
-
-  <title>JavaScript Tutorial</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Document</title>
 </head>
 <body>
+  <h1>Header one </h1>
+  <br>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti praesentium nihil nobis sunt labore minus voluptas repellat nulla. Error 
+    odit omnis nemo iste numquam, beatae veritatis recusandae labore modi sunt! Voluptatem aliquam ipsum itaque optio dolorem eum iste, pariatur natus 
+    eveniet numquam iusto doloribus quibusdam? Maxime dolorem minima ipsa deleniti? Ea fugiat velit alias quidem nemo harum totam quisquam quae!
+  </p>
+  <br>
+  <button>
+    Click me
+  </button>
+  <br>
 
-  <header class="header">
-    <a href="#" class="logo">Budget<span>App</span></a>
-  </header>
-
-  <div class="wrapper">
-    <div class="app">
-      <div class="top">
-        <h1 class="first-heading">Your Balance</h1>
-        <span class="balance-number">4700</span>
-      </div>
-
-      <div class="overview">
-        <section class="section">
-          <h2 class="second-heading">Income</h2>
-          <span class="number number--income">5000</span>
-        </section>
-
-        <section class="section">
-          <h2 class="second-heading">Expenses</h2>
-          <span class="number number--expenses">300</span>
-        </section>
-      </div>
-
-      <form class="form">
-        <label class="label" for="#">Description</label>
-        <input type="text" class="input input--description" />
-
-        <label class="label" for="#"
-          >Amount (+ for income or - for expense)</label
-        >
-        <input type="number" class="input input--amount" />
-
-        <button type="submit" class="btn">Add</button>
-      </form>
-    </div>
-
-    <section class="transactions-section">
-      <h2 class="third-heading">Transactions</h2>
-      <ul class="transactions">
-        <li class="transaction transaction--income">
-          <span class="transaction__text">Salary</span>
-          <span class="transaction__amount">+5000</span>
-          <button class="transaction__btn">X</button>
-        </li>
-        <li class="transaction transaction--expense">
-          <span class="transaction__text">Groceries</span>
-          <span class="transaction__amount">-300</span>
-          <button class="transaction__btn">X</button>
-        </li>
-      </ul>
-    </section>
-  </div>
+  <img src="tesla.jpg" alt="A picture of a tesla" width="200">
+  <br>
+  <img src="sine_wave.gif" alt="A sine_wave Image" width='220'>
+  <a href="https://www.techwatt.ai" target="_blank">My Website</a>
   
+  <audio controls autoplay muted  src="audio.m4a"></audio>
+
+  <p> Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Rem, iusto!</p>
+  <p> Lorem ipsum dolor sit amet <i>consectetur</i>  adipisicing elit. Rem, iusto!</p>
+  <p> Lorem ipsum dolor sit amet <strong>consectetur</strong>  adipisicing elit. Rem, iusto!</p>
+  <p> Lorem ipsum dolor sit amet <big>consectetur</big> adipisicing elit. Rem, iusto!</p>
+  <p> Lorem ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. Rem, iusto!</p>
+  <p> Lorem ipsum dolor sit amet <del>consectetur</del> adipisicing elit. Rem, iusto!</p>
+  <p> Lorem ipsum dolor sit amet  <sub>consectetur</sub> adipisicing elit. Rem, iusto!</p>
+  <p> Lorem ipsum dolor sit amet <sup>consectetur</sup> adipisicing elit. Rem, iusto!</p>
+<br>
+
+<h4>Unordered List</h4>
+  <ul>
+    <li>Felix</li>
+    <li>Sam</li>
+    <li>Nanor</li>
+  </ul>
+
+  <br>
+<h4>ordered List</h4>
+<ol type="A">
+  <li>Eat Breakfast</li>
+    <li>Take shower</li>
+    <li>Leave for work</li>
+</ol>
+
+<br>
+<h4>Description List</h4>
+<dl>
+  <dt>HTML</dt>
+  <dd>This adds structure to webpages</dd>
+  <dt>CSS</dt>
+  <dd>this styles the website</dd>
+  <dt>JAVASCRIPT</dt>
+  <dd>this adds functionality to the website</dd>
+</dl>
+
+
+<!-- Tables in HTML -->
+ <h3>My Store</h3>
+ <table>
+  <tr bgcolor = 'grey'>
+    <th>Sunday</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+  </tr>
+  <tr bgcolor = 'lightgrey' align="center">
+    <td>Closed</td>
+    <td>9-5</td>
+    <td>9-5</td>
+    <td>9-5</td>
+    <td>9-5</td>
+    <td>9-5</td>
+    <td>Closed</td>
+
+  </tr>
+ </table>
+
+
+<!-- span and divs -->
+ <!-- span adds markup to text or portion of a document -->
+  <!-- div defines a division of a document -->
+
+  <p>Lorem ipsum dolor sit amet, <span style="color: red; font-weight: bold;">consectetur adipisicing elit.</span> Labore corrupti itaque corporis.</p>
+
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt. Nihil quisquam nesciunt 
+      rem sut ipsa rem a repellat ducimus inventore unde, soluta ratione deserunt. Amet quae corrupti aspernatur error voluptates fuga.
+    Reprehenderit nisi est velit dolorem nemo, ut vitae. Aliquam minus deleniti, quae perferendis inventore 
+    corrupti am porro aliquid similique laboriosam necessitatibus error sapiente praesentium, aut temporibus minima dolores! Aliquid, ratione.
+  </p>
+  </div>
+
+  <!-- Iframe helps embed content from another source into an HTML document
+   used for ads. used for many hacking techniques -->
+
+   <iframe src="https://www.techwatt.ai" frameborder="0"></iframe>
+   <hr>
+<br>
+
+   <!-- Forms -->
+    <form action="">
+      <div>
+        <label for="fname">first name:</label>
+        <input type="text" name="fname" id="fname" placeholder="enter first name" required>
+
+      </div>
+      <br>
+       <div>
+        <label for="lname">last name:</label>
+        <input type="text" name="lname" id="lname" placeholder="enter first name" required>
+
+      </div>
+
+      <br>
+       <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="enter first name" required>
+
+      </div>
+
+      <br>
+       <div>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" placeholder="enter first name">
+
+      </div>
+
+      <br>
+       <div>
+        <label for="datatime">datetime:</label>
+        <input type="datetime-local" name="datatime" id="datatime" placeholder="" required>
+
+      </div>
+      <br>
+
+      <br>
+       <div>
+        <label for="number">number:</label>
+        <input type="number" name="number" id="number" placeholder="" required min="0" max="100">
+
+      </div>
+      <br>
+
+      
+      
+      <div>
+        <label for="radio">Mr</label>
+        <input type="radio" name="radio" id="radio" value="Mr">
+
+         <label for="radio">Mrs</label>
+        <input type="radio" name="radio" id="radio" value="Mrs">
+
+         <label for="radio">PhD</label>
+        <input type="radio" name="radio" id="radio" value="PhD">
+      </div>
+      <br>
+
+      <div>
+        <label for="payment">Payment</label>
+        <select name="payment" id="payment">
+          <option value="Momo">Momo</option>
+          <option value="bank">Bank</option>
+          <option value="cash">Cash</option>
+      </div>
+      <hr>
+      <br>
+
+
+      <div>
+        <input type="reset" name="reset" id="reset">
+        <input type="submit" name="submit" id="submit">
+      </div>
+
+    </form>
 </body>
 </html>
